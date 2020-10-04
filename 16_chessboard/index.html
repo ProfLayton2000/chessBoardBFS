@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5 Chessboard</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body style="background-color: black;">
+    <div id="mainPanel">
+      <div id="header">
+        Knight's moves on a chessboard
+      </div>
+      <div>
+        Board size: <input type="range" min="4" max="15" value="8" class="slider" id="boardSizeSlider">
+      </div>
+      <div>
+        <p>Search method</p>
+        <input type="radio" id="BFS" name="method" value="BFS">
+        <label for="BFS">Breath first</label><br>
+        <input type="radio" id="DSF" name="method" value="Depth first">
+        <label for="BFS">Depth first</label><br>
+      </div>
+    </div>
+    <div id="sketch-holder" style="float:right">
+    </div>
+  </body>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+</html>
